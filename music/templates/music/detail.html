@@ -1,10 +1,9 @@
 {% extends 'music/base.html' %}
-{% load static %}
 
 {% block title%}Album Title{% endblock %}
 
 {% block body%}
-    <img src="{% static album.album_logo %}" >
+    <img src="{{ album.album_logo.url }}" >
 
     <br>
     <h1>{{ album.album_title }}</h1>

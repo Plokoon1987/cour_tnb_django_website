@@ -7,6 +7,8 @@ urlpatterns = [
     # /music
     url(r'^$', views.IndexView.as_view(), name='index'),
     
+    url(r'^register/$', views.UserFormView.as_view(), name='register'),
+    
     # /music/712
     # album_id is a variable to be passed
     url(r'^(?P<pk>[0-9]+)/$', views.DetailView.as_view(), name='detail'),
